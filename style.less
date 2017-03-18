@@ -1,0 +1,271 @@
+@color: #636758;
+body {
+	margin: 0;
+	padding: 0;
+	background: url(img/background.gif);
+}
+.wrapper {
+	width: 725px;
+	margin: 0 auto;
+}
+@font-face {
+	font-family: "Brandon Printed One";
+	src: url(fonts/brandonprintedone.ttf);
+}
+header {
+	height: 190px; 
+	width: 600px;
+	margin: 40px auto 88px auto;
+	text-align: center;
+	position: relative;
+	.logo {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	h3 {
+		text-transform: uppercase;
+		color: @color;
+		font-family: "Arial Regular";
+		font-size: 14px;
+		line-height: 18px;
+		margin-top: 35px;
+		margin-bottom: 45px;
+		text-align: center;
+		&::before {
+			content: '';
+		    background: @color;
+		    display: inline-block;
+		    height: 2px;
+		    position: absolute;
+		    top: 50px;
+		    left: 93px;
+		    width: 120px;
+		}
+		&::after {
+		    background: @color;
+		    content: "";
+		    display: inline-block;
+		    height: 2px;
+		    width: 120px;
+		    position: absolute;
+		    top: 50px;
+		    right: 93px;     
+		}
+	}
+}
+.content {
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	width: 725px;
+	height: 1400px;
+	margin-bottom: 50px;
+	.first-section {
+		height: 500px;
+		background: #E4E7E7 url(img/sheeps.gif) no-repeat center;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 18px;
+		color: #fff;
+		.text {
+			text-align: center; 
+			position: relative;
+			top: 19%;
+			color: #fff;
+			.onpicture {
+				font-size: 36px;
+				font-family: "Brandon Printed One";
+				letter-spacing: 12px;
+				color: #fff !important;
+			}
+			hr {
+				width: 100px;
+				height: 1px;
+				background: #fff;
+				border: none;
+				margin: 25px auto;
+				display: inline-block;
+			}
+			.heading {
+				font-size: 14px;
+				letter-spacing: 3px;
+				font-family: "Arial Regular";
+			}
+		}
+	}
+	.second-section {
+		font-family: Arial;
+		.second-heading {
+			color: #484a43;
+			text-align: center;
+			margin: 50px auto 40px auto;
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.photos {
+			width: 725px;
+			height: 155px;
+		}
+		.second-section-img1 {
+			float: left;
+			width: 260px;
+			height: 150px;
+			margin-left: 50px;
+			background: #E4E7E7 url(img/field1.gif) no-repeat center;
+			cursor: pointer;
+			.onpicture {
+				font-size: 24px;
+				font-family: "Brandon Printed One";
+				color: #fff;
+				line-height: 100px;
+				text-align: center;
+				letter-spacing: 4px;			
+			}
+		}
+		.second-section-img2 {
+			float: right;
+			width: 260px;
+			height: 150px;
+			margin-right: 50px;
+			background: #E4E7E7 url(img/field2.gif) no-repeat center;
+			cursor: pointer;
+			.onpicture {
+				font-size: 24px;
+				font-family: "Brandon Printed One";
+				color: #fff;
+				line-height: 100px;
+				text-align: center;
+				letter-spacing: 4px;
+			}
+		}
+		.left, 
+		.right {
+			width: 260px;
+			height: 200px;
+		}
+		.left {
+			float: left;
+			margin-left: 50px; 
+
+		}
+		.right {
+			float: right;
+			margin-right: 50px;
+		}
+		.left h4, .right h4 {
+			color: #6d7e44;
+			font-size: 14px;
+			line-height: 22px;
+		}
+		.left p, .right p {
+			color: #6d7e44;
+			color: #333;
+			font-size: 12px;
+			margin-top: -10px;
+			font-family: "Arial Regular", sans-serif;
+		}
+	}
+	.third-section {
+		margin-top: 140px;
+		.second-section-img3 {
+			width: 564px;
+			height: 250px;
+			margin: 0 auto;
+			background: #E4E7E7 url(img/lake.gif) no-repeat top;
+			cursor: pointer;
+			}
+			.onpicture {
+				font-size: 24px;
+				font-family: "Brandon Printed One";
+				color: #fff;
+				line-height: 250px;
+				letter-spacing: 4px;
+				text-align: center;
+			}
+		}
+		.text {
+			margin-left: 80px;
+			margin-right: 80px;
+		}
+		 h4 {
+			color: #6d7e44;
+			font-size: 14px;
+			line-height: 22px;
+			font-family: "Arial Bold", sans-serif;
+		}
+		p {
+			color: #6d7e44;
+			color: #333;
+			font-size: 12px;
+			margin-top: -10px;
+			font-family: "Arial Regular", sans-serif;
+		}
+	}
+	footer {
+		margin-bottom: 88px;
+		.footer {
+			margin-top: 40px;
+		}
+		hr {
+			margin: 25px auto;
+			width: 565px;
+			height: 2px;
+			border: none;
+			background: @color;
+
+		}
+		.footer-left {
+			float: left;
+			width: 290px;
+			margin-left: 80px;
+			margin-top: -20px;
+			h4 {
+				font-family: "Arial Bold", sans-serif;
+				font-size: 14px;
+				line-height: 22px;
+			}
+			p {
+				font-family: Arial, sans-serif;
+				font-size: 11px;
+			}
+			a {
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				color: #6d7e44;
+				text-decoration: none;
+			}  
+		}
+		.footer-right {
+			float: right;
+			width: 120px;
+			margin-right: 80px;
+			.links a {
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+			}
+			.fb {
+				background: url(img/fb.gif) no-repeat center;
+			}
+			.tw {
+				background: url(img/tw.gif) no-repeat center;
+			}
+			.hz {
+				background: url(img/hz.gif) no-repeat center;
+			}
+			.or {
+				background: url(img/or.gif) no-repeat center;
+			}
+			a {
+				
+				font-family: "Arial Bold";
+				line-height: 22px;
+				color: #6d7e44;
+				text-decoration: none;
+			}
+		}
+	}
+}
